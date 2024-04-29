@@ -51,7 +51,8 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+//                    color = MaterialTheme.colorScheme.background
+                    color = Color.White
                 ) {
                     UnitConvertor()
                 }
@@ -214,9 +215,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-//@Preview(showBackground = true)
-//@Composable
-////fun anyfucntionPreview() {
-////    UnitConvertor()
-////
-////}
+@Preview(showBackground = true)
+@Composable
+fun anyfucntionPreview() {
+    UnitConvertor()
+
+}
